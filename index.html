@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_modal.css">
+    <title>Login - Seja Bem Vindo</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Voltar</a>
+            <a href="#">Menu</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <form id="form" autocomplete="off">
+            <img src="./in.png">
+            <label for="user"><input id="user" type="text" name="usuario" placeholder="Email/Usuário" spellcheck="false"></label>
+            <span id="user_error"></span>
+            <label for="senha"><input id="senha" type="password" name="senha" placeholder="Senha" spellcheck="false"></label>
+            <span id="senha_error"></span>
+            <input id="button" type="submit" value="Conectar" >
+            <p>Desejo Realizar meu <a href="#">Cadastro</a></p>
+        </form>
+    </main>
+
+    <div id="loginRedirect_modal" class="loginRedirect_modal"">
+
+        <!-- Modal content -->
+        <div class="conteudo">
+          <span class="fechar">&times;</span>
+          <h3>Login realizado.</h3>
+          <h3>Bem - vindo novamente <span id="userNameRef"></span></h3></span>
+          <p>Você será redicionado para a tela de boas-vindas.</p>
+        </div>
+      </div>
+
+
+    <footer>
+        <div>
+            <h2>Obrigado por escolher o nosso serviço.</h2>
+            <p>BananaArts&nbsp;&copy;</p>
+        </div>
+    </footer>
+    <script src="./script.js" ></script>
+</body>
+</html>
